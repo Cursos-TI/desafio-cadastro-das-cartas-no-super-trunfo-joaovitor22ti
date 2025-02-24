@@ -24,6 +24,8 @@ int main() {
     float areacidade1;
     float pibcidade1;
     int numeropontosturisticoscidade1;
+    float densidadePopulacional1;
+    float pibPerCapita1;
 
     char estado2[50];
     char codigocarta2[50];
@@ -32,6 +34,8 @@ int main() {
     float areacidade2;
     float pibcidade2;
     int numeropontosturisticoscidade2;
+    float densidadePopulacional2;
+    float pibPerCapita2;
 
     //Aqui é onde vai ser a entrada de dados da carta 01
     printf("Digite o Estado da carta 01: \n");
@@ -55,6 +59,9 @@ int main() {
     printf("Digite o Número de Pontos Turísticos da Cidade 01: \n");
     scanf("%d", &numeropontosturisticoscidade1);
 
+    densidadePopulacional1 = populacao1 / areacidade1;
+    pibPerCapita1 = pibcidade1 / (double)populacao1;
+
     //Aqui é onde vai ser a entrada de dados da carta 02
     printf("Digite o Estado da carta 02: \n");
     scanf("%s", estado2);
@@ -77,6 +84,9 @@ int main() {
     printf("Digite o Número de Pontos Turísticos da Cidade 02: \n");
     scanf("%d", &numeropontosturisticoscidade2);
 
+    densidadePopulacional2 = populacao2 / areacidade2;
+    pibPerCapita2 = pibcidade2 / (double)populacao2;
+
     //Isso vai mostrar os dados informados da carta 01
     printf("DADOS DA CARTA 01: \n");
     printf("Estado da Carta 01: %s\n", estado1);
@@ -86,6 +96,8 @@ int main() {
     printf("Área da Cidade 01: %.2f \n", areacidade1);
     printf("O PIB da Cidade 01: %.2f \n", pibcidade1);
     printf("Números de Pontos Turísticos da Cidade 01: %d \n", numeropontosturisticoscidade1);
+    printf("A Densidade Populacional da Cidade 01: %.2f \n", densidadePopulacional1);
+    printf("O PIB per capita da Cidade 01: %.2f \n",pibPerCapita1);
 
     //Isso vai mostrar os dados informados da carta 02
     printf("DADOS DA CARTA 02: \n");
@@ -96,6 +108,8 @@ int main() {
     printf("Área da Cidade 02: %.2f \n", areacidade2);
     printf("O PIB da Cidade 02: %.2f \n", pibcidade2);
     printf("Números de Pontos Turísticos da Cidade 02: %d \n", numeropontosturisticoscidade2);
+    printf("A Densidade Populacional da Cidade 02: %.2f \n", densidadePopulacional2);
+    printf("O PIB per capita da Cidade 02: %.2f \n",pibPerCapita2);
 
     
 
